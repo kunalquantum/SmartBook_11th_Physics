@@ -1,0 +1,187 @@
+// Single source of truth — all 16 chapters, Maharashtra HSC Std XI
+
+export const CHAPTERS = [
+    {
+        id: 1, unit: 'Unit I',
+        title: 'Units and Measurements',
+        desc: 'Foundation of all physical sciences — measuring the world with precision.',
+        topics: [
+            { tag: 'basics', name: 'Physical Quantities & SI Units', detail: 'Fundamental & derived units, dimensions' },
+            { tag: 'accuracy', name: 'Errors in Measurement', detail: 'Systematic, random errors, significant figures' },
+            { tag: 'analysis', name: 'Dimensional Analysis', detail: 'Homogeneity principle, unit conversion' },
+            { tag: 'tools', name: 'Precision Instruments', detail: 'Vernier calipers, screw gauge' },
+        ],
+    },
+    {
+        id: 2, unit: 'Unit I',
+        title: 'Mathematical Methods',
+        desc: 'Scalars, vectors, and the calculus tools physics needs.',
+        topics: [
+            { tag: 'vectors', name: 'Scalars & Vectors', detail: 'Types, representation, angles' },
+            { tag: 'vectors', name: 'Vector Operations', detail: 'Addition, triangle & parallelogram law' },
+            { tag: 'vectors', name: 'Dot & Cross Product', detail: 'Scalar product, vector product, uses' },
+            { tag: 'calculus', name: 'Calculus in Physics', detail: 'Differentiation & integration basics' },
+        ],
+    },
+    {
+        id: 3, unit: 'Unit II',
+        title: 'Motion in a Plane',
+        desc: 'Kinematics extended to two dimensions — projectiles and circles.',
+        topics: [
+            { tag: 'kinematics', name: 'Projectile Motion', detail: 'Trajectory, range, time of flight' },
+            { tag: 'kinematics', name: 'Uniform Circular Motion', detail: 'Angular velocity, centripetal acceleration' },
+            { tag: 'kinematics', name: 'Relative Velocity in 2D', detail: 'River-boat, rain-umbrella problems' },
+        ],
+    },
+    {
+        id: 4, unit: 'Unit II',
+        title: 'Laws of Motion',
+        desc: "Newton's three laws — the rules governing every force and acceleration.",
+        topics: [
+            { tag: 'newton', name: "Newton's First Law", detail: 'Inertia, frames of reference' },
+            { tag: 'newton', name: "Newton's Second Law", detail: 'F = ma, momentum, impulse' },
+            { tag: 'newton', name: "Newton's Third Law", detail: 'Action-reaction, apparent weight' },
+            { tag: 'friction', name: 'Friction', detail: 'Static, kinetic, rolling; angle of friction' },
+            { tag: 'dynamics', name: 'Circular Motion Dynamics', detail: 'Banking, conical pendulum' },
+        ],
+    },
+    {
+        id: 5, unit: 'Unit III',
+        title: 'Gravitation',
+        desc: 'From falling apples to orbiting satellites — universal gravitation.',
+        topics: [
+            { tag: 'gravity', name: "Newton's Law of Gravitation", detail: 'Universal constant G, field lines' },
+            { tag: 'gravity', name: 'Acceleration due to Gravity', detail: 'Variation with height, depth, latitude' },
+            { tag: 'orbits', name: 'Satellites & Orbital Motion', detail: 'Orbital speed, escape velocity' },
+            { tag: 'energy', name: 'Gravitational Potential Energy', detail: 'GPE, binding energy, geo-stationary orbit' },
+        ],
+    },
+    {
+        id: 6, unit: 'Unit III',
+        title: 'Mechanical Properties of Solids',
+        desc: 'How materials deform — elasticity, stress, strain and Hooke\'s law.',
+        topics: [
+            { tag: 'elastic', name: 'Elasticity & Plasticity', detail: 'Elastic limit, permanent set' },
+            { tag: 'stress', name: 'Stress and Strain', detail: 'Tensile, compressive, shear types' },
+            { tag: 'moduli', name: 'Elastic Moduli', detail: "Young's, Bulk, Shear, Poisson's ratio" },
+            { tag: 'energy', name: 'Elastic Potential Energy', detail: 'Energy stored in a stretched wire' },
+        ],
+    },
+    {
+        id: 7, unit: 'Unit III',
+        title: 'Thermal Properties of Matter',
+        desc: 'Temperature, heat, and how matter responds to thermal energy.',
+        topics: [
+            { tag: 'heat', name: 'Temperature Scales', detail: 'Celsius, Fahrenheit, Kelvin' },
+            { tag: 'heat', name: 'Thermal Expansion', detail: 'Linear, area, volume coefficients' },
+            { tag: 'calorimetry', name: 'Calorimetry', detail: 'Specific heat, latent heat, mixtures' },
+            { tag: 'transfer', name: 'Heat Transfer', detail: 'Conduction, convection, radiation' },
+            { tag: 'gas', name: 'Ideal Gas Laws', detail: "Boyle's, Charles', Gay-Lussac's" },
+        ],
+    },
+    {
+        id: 8, unit: 'Unit III',
+        title: 'Sound',
+        desc: 'Longitudinal waves — from vibrating strings to the Doppler effect.',
+        topics: [
+            { tag: 'waves', name: 'Wave Motion', detail: 'Transverse vs longitudinal, wave equation' },
+            { tag: 'sound', name: 'Speed of Sound', detail: "Newton's formula, Laplace correction" },
+            { tag: 'sound', name: 'Superposition & Interference', detail: 'Beats, standing waves, resonance' },
+            { tag: 'music', name: 'Vibrations in Strings & Pipes', detail: 'Nodes, antinodes, harmonics, overtones' },
+            { tag: 'doppler', name: 'Doppler Effect', detail: 'Apparent frequency, applications' },
+        ],
+    },
+    {
+        id: 9, unit: 'Unit IV',
+        title: 'Optics',
+        desc: 'Reflection, refraction, lenses, and the wave nature of light.',
+        topics: [
+            { tag: 'geo', name: 'Reflection of Light', detail: 'Spherical mirrors, mirror formula' },
+            { tag: 'geo', name: 'Refraction of Light', detail: "Snell's law, TIR, optical fibre" },
+            { tag: 'lenses', name: 'Lenses', detail: 'Thin lens formula, power, lens maker' },
+            { tag: 'optical', name: 'Optical Instruments', detail: 'Microscope, telescope, human eye' },
+            { tag: 'wave', name: 'Wave Optics', detail: "Huygens' principle, interference, diffraction" },
+        ],
+    },
+    {
+        id: 10, unit: 'Unit IV',
+        title: 'Electrostatics',
+        desc: 'Electric charges at rest — Coulomb\'s law to capacitors.',
+        topics: [
+            { tag: 'charge', name: "Electric Charge & Coulomb's Law", detail: 'Properties, permittivity, superposition' },
+            { tag: 'field', name: 'Electric Field & Potential', detail: 'Field lines, potential, equipotential' },
+            { tag: 'gauss', name: "Gauss's Law", detail: 'Electric flux, symmetric distributions' },
+            { tag: 'capacitor', name: 'Capacitance & Capacitors', detail: 'Parallel plate, dielectrics, energy' },
+        ],
+    },
+    {
+        id: 11, unit: 'Unit IV',
+        title: 'Electric Current Through Conductors',
+        desc: "Moving charges — Ohm's law, resistance, and Kirchhoff's laws.",
+        topics: [
+            { tag: 'current', name: 'Electric Current & Drift Velocity', detail: 'Current density, mobility, conductivity' },
+            { tag: 'ohm', name: "Ohm's Law & Resistance", detail: 'Resistivity, temperature dependence' },
+            { tag: 'circuit', name: "Kirchhoff's Laws", detail: 'Junction rule, loop rule, Wheatstone bridge' },
+            { tag: 'power', name: 'Electrical Power & Energy', detail: 'Joule heating, household circuits' },
+        ],
+    },
+    {
+        id: 12, unit: 'Unit V',
+        title: 'Magnetism',
+        desc: 'Magnetic fields, forces, and the link between electricity and magnetism.',
+        topics: [
+            { tag: 'magnets', name: "Bar Magnets & Earth's Magnetism", detail: 'Dipole, field lines, declination, dip' },
+            { tag: 'field', name: 'Magnetic Field & Forces', detail: 'Lorentz force, Hall effect, cyclotron' },
+            {
+                tag: 'current', name: 'Magnetic Effect of Current', detail: 'Biot-Savart, Ampere\'s law, solenoid'
+            },
+            { tag: 'matter', name: 'Magnetic Properties of Matter', detail: 'Dia, para, ferro; hysteresis loop' },
+        ],
+    },
+    {
+        id: 13, unit: 'Unit V',
+        title: 'Electromagnetic Induction',
+        desc: 'How changing magnetic fields generate electric currents.',
+        topics: [
+            { tag: 'faraday', name: "Faraday's Laws of Induction", detail: "EMF, Lenz's law, motional EMF" },
+            { tag: 'self', name: 'Self & Mutual Inductance', detail: 'L, M coefficients, energy stored' },
+            { tag: 'ac', name: 'Alternating Current Basics', detail: 'AC generation, RMS, phasors' },
+            { tag: 'transformer', name: 'Transformers', detail: 'Step-up/down, efficiency, energy losses' },
+        ],
+    },
+    {
+        id: 14, unit: 'Unit V',
+        title: 'Semiconductors',
+        desc: 'The quantum-mechanical world of p-n junctions and transistors.',
+        topics: [
+            { tag: 'band', name: 'Energy Bands & Classification', detail: 'Conductors, insulators, band gap' },
+            { tag: 'sc', name: 'Intrinsic & Extrinsic Semiconductors', detail: 'n-type, p-type, doping' },
+            { tag: 'diode', name: 'p-n Junction & Diode', detail: 'Depletion layer, bias, I-V curve' },
+            { tag: 'devices', name: 'Semiconductor Devices', detail: 'LED, photodiode, solar cell, Zener' },
+        ],
+    },
+    {
+        id: 15, unit: 'Unit VI',
+        title: 'Communication Systems',
+        desc: 'Modulation, transmission, and modern communication technology.',
+        topics: [
+            { tag: 'basics', name: 'Elements of Communication', detail: 'Transmitter, channel, receiver, S/N' },
+            { tag: 'modulation', name: 'Modulation & Demodulation', detail: 'AM, FM, bandwidth, carrier wave' },
+            { tag: 'propagation', name: 'Wave Propagation', detail: 'Ground, sky, space, satellite' },
+            { tag: 'digital', name: 'Digital Communication', detail: 'Digitisation, optical fibre basics' },
+        ],
+    },
+    {
+        id: 16, unit: 'Unit VI',
+        title: 'Modern Physics',
+        desc: 'Atoms, nuclei, and the quantum world — where classical physics ends.',
+        topics: [
+            { tag: 'atomic', name: 'Atomic Structure', detail: 'Rutherford, Bohr model, spectral series' },
+            { tag: 'quantum', name: 'Quantum Numbers & Orbitals', detail: 'n, l, m, s; Pauli exclusion principle' },
+            { tag: 'nuclear', name: 'Nuclear Physics', detail: 'Binding energy, radioactivity, decay laws' },
+            { tag: 'modern', name: 'Dual Nature of Radiation', detail: 'Photoelectric effect, de Broglie, uncertainty' },
+        ],
+    },
+]
+
+export const TOTAL_TOPICS = CHAPTERS.reduce((sum, ch) => sum + ch.topics.length, 0)
