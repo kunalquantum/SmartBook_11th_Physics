@@ -180,6 +180,41 @@ export const CHAPTERS = [
             { tag: 'modern', name: 'Dual Nature of Radiation', detail: 'Photoelectric effect, de Broglie, uncertainty' },
         ],
     },
+    {
+        id: 2, unit: 'Unit I',
+        title: 'Mathematical Methods',
+        desc: 'Scalars, vectors, and the calculus tools physics needs.',
+        topics: [
+            {
+                tag: 'vectors',
+                name: 'Scalars & Vectors',
+                detail: 'Types, representation, angles',
+                concept: 'A scalar has only magnitude (temperature, speed, mass). A vector has both magnitude AND direction (force, velocity, displacement). Vectors are drawn as arrows — length is magnitude, orientation is direction.',
+                formula: ['|A| = magnitude', 'Ax = |A|cosθ', 'Ay = |A|sinθ', 'θ = tan⁻¹(Ay/Ax)'],
+            },
+            {
+                tag: 'vectors',
+                name: 'Vector Operations',
+                detail: 'Addition, triangle & parallelogram law',
+                concept: 'Triangle Law: place vectors head-to-tail, the resultant closes the triangle. Parallelogram Law: place vectors tail-to-tail, the diagonal is the resultant. Both give the same answer.',
+                formula: ['|R| = √(A²+B²+2ABcosθ)', 'α = tan⁻¹(B sinθ / A+B cosθ)'],
+            },
+            {
+                tag: 'vectors',
+                name: 'Dot & Cross Product',
+                detail: 'Scalar product, vector product, uses',
+                concept: 'Dot product gives a scalar — it measures how much two vectors point in the same direction. Cross product gives a vector perpendicular to both — its magnitude is the area of the parallelogram they form.',
+                formula: ['A·B = |A||B|cosθ', '|A×B| = |A||B|sinθ', 'Work = F·d', 'Torque = r×F'],
+            },
+            {
+                tag: 'calculus',
+                name: 'Calculus in Physics',
+                detail: 'Differentiation & integration basics',
+                concept: 'Velocity is the derivative of position with respect to time. Acceleration is the derivative of velocity. Integration reverses this — given acceleration, integrate to get velocity, then position.',
+                formula: ['v = dx/dt', 'a = dv/dt = d²x/dt²', 'x = ∫v dt', 'v = ∫a dt'],
+            },
+        ],
+    },
 ]
 
 export const TOTAL_TOPICS = CHAPTERS.reduce((sum, ch) => sum + ch.topics.length, 0)
