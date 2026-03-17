@@ -347,6 +347,47 @@ export const CHAPTERS = [
                 ],
             },
         ],
+    }, {
+        id: 7, unit: 'Unit III',
+        title: 'Thermal Properties of Matter',
+        desc: 'Temperature, heat, and how matter responds to thermal energy.',
+        topics: [
+            {
+                tag: 'heat',
+                name: 'Temperature Scales',
+                detail: 'Celsius, Fahrenheit, Kelvin conversions',
+                concept: 'Temperature is the measure of average kinetic energy of molecules. Three scales exist: Celsius (°C) based on water, Fahrenheit (°F) used in the US, and Kelvin (K) — the absolute scale where 0 K is absolute zero, the lowest possible temperature. All gas law calculations must use Kelvin.',
+                formula: ['K = °C + 273.15', 'F = (9/5)°C + 32', '°C = (F − 32) × 5/9', 'Absolute zero = −273.15°C'],
+            },
+            {
+                tag: 'heat',
+                name: 'Thermal Expansion',
+                detail: 'Linear, area, volume expansion coefficients',
+                concept: 'When heated, solids expand because molecular vibrations increase. Linear expansion (α) applies to length, area expansion (β = 2α) to surfaces, and volume expansion (γ = 3α) to volumes. Liquids and gases also expand — gases expand far more than solids.',
+                formula: ['ΔL = αL₀ΔT', 'ΔA = βA₀ΔT  (β=2α)', 'ΔV = γV₀ΔT  (γ=3α)', 'α_steel = 11×10⁻⁶ /°C'],
+            },
+            {
+                tag: 'calorimetry',
+                name: 'Calorimetry',
+                detail: 'Specific heat, latent heat, method of mixtures',
+                concept: 'Heat flows from hot to cold until thermal equilibrium. The heat gained by the cold body equals heat lost by the hot body (conservation of energy). Specific heat capacity is how much heat 1 kg of a substance needs to rise by 1°C. Latent heat is energy for phase change — temperature stays constant during melting/boiling.',
+                formula: ['Q = mcΔT', 'Q_lost = Q_gained', 'Q_latent = mL', 'T_eq = (m₁c₁T₁ + m₂c₂T₂)/(m₁c₁ + m₂c₂)'],
+            },
+            {
+                tag: 'transfer',
+                name: 'Heat Transfer',
+                detail: 'Conduction, convection, radiation, Newton\'s law of cooling',
+                concept: 'Heat transfers in three ways: Conduction — direct molecular collision through solids. Convection — bulk movement of fluid carrying heat. Radiation — electromagnetic waves (infrared) that need no medium. Newton\'s law of cooling says the rate of cooling is proportional to the temperature difference with the surroundings.',
+                formula: ['Q/t = kA(T₁−T₂)/d', 'dT/dt = −b(T−T₀)', 'T(t) = T₀ + (Tᵢ−T₀)e^(−bt)', 'E = σT⁴ (Stefan)'],
+            },
+            {
+                tag: 'gas',
+                name: 'Ideal Gas Laws',
+                detail: "Boyle's, Charles', Gay-Lussac's, ideal gas equation",
+                concept: "Boyle's Law: at constant T, P∝1/V. Charles' Law: at constant P, V∝T. Gay-Lussac's Law: at constant V, P∝T. Combined into the ideal gas equation PV=nRT. An ideal gas has perfectly elastic collisions and no intermolecular forces — real gases approximate this at low pressure and high temperature.",
+                formula: ['PV = nRT', 'P₁V₁/T₁ = P₂V₂/T₂', 'R = 8.314 J/mol·K', 'PV = NkT'],
+            },
+        ],
     },
 ]
 

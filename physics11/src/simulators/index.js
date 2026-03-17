@@ -22,6 +22,12 @@ import StressStrain from './ch06_solids/StressStrain'
 import ElasticModuli from './ch06_solids/ElasticModuli'
 import ElasticPE from './ch06_solids/ElasticPE'
 
+import TemperatureScales from './ch07_therma/TemperatureScales'
+import ThermalExpansion from './ch07_therma/ThermalExpansion'
+import Calorimetry from './ch07_therma/Calorimetry'
+import HeatTransfer from './ch07_therma/HeatTransfer'
+import IdealGasLaws from './ch07_therma/IdealGasLaws'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -46,4 +52,11 @@ export const SIMULATORS = {
     ch06_t1: StressStrain,
     ch06_t2: ElasticModuli,
     ch06_t3: ElasticPE,
+
+
+    ch07_t0: TemperatureScales,
+    ch07_t1: ThermalExpansion,
+    ch07_t2: Calorimetry,
+    ch07_t3: HeatTransfer,
+    ch07_t4: IdealGasLaws,
 }
