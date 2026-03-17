@@ -213,6 +213,51 @@ export const CHAPTERS = [
                 concept: 'Velocity is the derivative of position with respect to time. Acceleration is the derivative of velocity. Integration reverses this — given acceleration, integrate to get velocity, then position.',
                 formula: ['v = dx/dt', 'a = dv/dt = d²x/dt²', 'x = ∫v dt', 'v = ∫a dt'],
             },
+
+        ],
+    },
+    {
+        id: 3, unit: 'Unit II',
+        title: 'Motion in a Plane',
+        desc: 'Kinematics extended to two dimensions — projectiles and circular motion.',
+        topics: [
+            {
+                tag: 'kinematics',
+                name: 'Projectile Motion',
+                detail: 'Trajectory, range, time of flight, max height',
+                concept: 'A projectile has two independent motions: horizontal (constant velocity, no acceleration) and vertical (uniform acceleration due to gravity). The curved path is always a parabola. Horizontal and vertical components never affect each other.',
+                formula: [
+                    'R = u²sin2θ / g',
+                    'H = u²sin²θ / 2g',
+                    'T = 2u sinθ / g',
+                    'x = u cosθ · t',
+                    'y = u sinθ · t − ½gt²',
+                ],
+            },
+            {
+                tag: 'kinematics',
+                name: 'Uniform Circular Motion',
+                detail: 'Angular velocity, centripetal acceleration',
+                concept: 'Speed is constant but velocity changes direction every instant — so there IS acceleration. This centripetal acceleration always points toward the centre. The velocity is always tangent to the circle, perpendicular to the radius.',
+                formula: [
+                    'v = rω',
+                    'ac = v²/r = rω²',
+                    'T = 2πr/v = 2π/ω',
+                    'F = mv²/r',
+                ],
+            },
+            {
+                tag: 'kinematics',
+                name: 'Relative Velocity in 2D',
+                detail: 'River-boat, rain-umbrella problems',
+                concept: 'Velocity of an object depends on the frame of reference. In river-boat problems, the boat\'s actual velocity is the vector sum of its velocity relative to water and the river\'s velocity. To cross straight, the boat must aim upstream at a calculated angle.',
+                formula: [
+                    'V_actual = V_boat + V_river',
+                    'd = V_river × t',
+                    'cosα = V_river / V_boat',
+                    't = w / V_boat',
+                ],
+            },
         ],
     },
 ]
