@@ -259,6 +259,40 @@ export const CHAPTERS = [
                 ],
             },
         ],
+    }, {
+        id: 5, unit: 'Unit III',
+        title: 'Gravitation',
+        desc: 'From falling apples to orbiting satellites — universal gravitation.',
+        topics: [
+            {
+                tag: 'gravity',
+                name: "Newton's Law of Gravitation",
+                detail: 'Universal constant G, gravitational field',
+                concept: 'Every mass in the universe attracts every other mass. The force is proportional to the product of the masses and inversely proportional to the square of the distance between them. Double the distance — force drops to one quarter. This inverse-square law shapes everything from tides to galaxy formation.',
+                formula: ['F = Gm₁m₂/r²', 'G = 6.674×10⁻¹¹ Nm²kg⁻²', 'g = GM/R²'],
+            },
+            {
+                tag: 'gravity',
+                name: 'Acceleration due to Gravity',
+                detail: 'Variation with height, depth, latitude',
+                concept: 'g is not constant — it decreases as you go above Earth\'s surface (inverse square) and also decreases linearly as you go below the surface (because less mass pulls you). At the centre of Earth, g = 0. At the poles g is slightly more than at the equator due to Earth\'s shape and rotation.',
+                formula: ['g = GM/R²', 'g_h = g(1 − 2h/R)', 'g_d = g(1 − d/R)', 'g_lat = g − Rω²cos²λ'],
+            },
+            {
+                tag: 'orbits',
+                name: 'Satellites & Orbital Motion',
+                detail: 'Orbital speed, escape velocity, binding energy',
+                concept: 'A satellite stays in orbit because its centripetal acceleration exactly equals gravitational acceleration at that altitude. Orbital speed decreases with altitude. Escape velocity is √2 times the orbital speed — enough to break free of Earth\'s gravity completely.',
+                formula: ['v₀ = √(GM/r)', 'vₑ = √(2GM/R) = √2·v₀', 'T = 2π√(r³/GM)', 'h_geo = 35,786 km'],
+            },
+            {
+                tag: 'energy',
+                name: 'Gravitational Potential Energy',
+                detail: 'GPE, binding energy, geostationary orbit',
+                concept: 'Gravitational potential energy is negative — you need to add energy to escape gravity\'s well. The deeper in the well (closer to Earth), the more negative the energy. Total mechanical energy of a satellite = KE + PE = −GMm/2r (always negative for a bound orbit).',
+                formula: ['U = −GMm/r', 'E = −GMm/2r', 'BE = GMm/2r', 'V = −GM/r'],
+            },
+        ],
     },
 ]
 

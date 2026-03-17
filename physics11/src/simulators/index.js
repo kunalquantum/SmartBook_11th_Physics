@@ -12,6 +12,11 @@ import ProjectileSim from './ch03_motion/ProjectileSim'
 import CircularMotion from './ch03_motion/CircularMotion'
 import RelativeVelocity from './ch03_motion/RelativeVelocity'
 
+import GravitationalForce from './ch05_gravitation/GravitationalForce'
+import GravityVariation from './ch05_gravitation/GravityVariation'
+import OrbitalMotion from './ch05_gravitation/OrbitalMotion'
+import EnergyWell from './ch05_gravitation/EnergyWell'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -26,4 +31,9 @@ export const SIMULATORS = {
     ch03_t0: ProjectileSim,
     ch03_t1: CircularMotion,
     ch03_t2: RelativeVelocity,
+
+    ch05_t0: GravitationalForce,
+    ch05_t1: GravityVariation,
+    ch05_t2: OrbitalMotion,
+    ch05_t3: EnergyWell,
 }
