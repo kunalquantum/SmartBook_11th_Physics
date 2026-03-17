@@ -293,6 +293,60 @@ export const CHAPTERS = [
                 formula: ['U = −GMm/r', 'E = −GMm/2r', 'BE = GMm/2r', 'V = −GM/r'],
             },
         ],
+    }, {
+        id: 6, unit: 'Unit III',
+        title: 'Mechanical Properties of Solids',
+        desc: 'How materials deform under force — elasticity, stress, strain and breaking points.',
+        topics: [
+            {
+                tag: 'elastic',
+                name: 'Elasticity & Plasticity',
+                detail: 'Elastic limit, permanent set, stress-strain curve',
+                concept: 'Within the elastic limit a material returns to its original shape when force is removed. Beyond it, permanent deformation occurs (plastic region). The stress-strain curve tells the full story — proportional limit, elastic limit, yield point, ultimate stress, and fracture point all appear on it.',
+                formula: [
+                    'Hooke\'s Law: F = kx',
+                    'Stress = F/A',
+                    'Strain = ΔL/L',
+                    'E = Stress/Strain',
+                ],
+            },
+            {
+                tag: 'stress',
+                name: 'Stress and Strain',
+                detail: 'Tensile, compressive, shear types',
+                concept: 'Stress is the internal restoring force per unit area. Strain is the fractional change in dimension. They come in three types — tensile (stretching), compressive (squeezing), and shear (sliding layers). Each has its own modulus.',
+                formula: [
+                    'Tensile stress = F/A  (Pa)',
+                    'Tensile strain = ΔL/L  (dimensionless)',
+                    'Shear stress = F/A',
+                    'Shear strain = Δx/h = tanφ',
+                ],
+            },
+            {
+                tag: 'moduli',
+                name: 'Elastic Moduli',
+                detail: "Young's, Bulk, Shear modulus, Poisson's ratio",
+                concept: "Young's modulus measures resistance to stretching. Bulk modulus measures resistance to uniform compression. Shear modulus (rigidity) measures resistance to shape change. Poisson's ratio is the ratio of lateral contraction to longitudinal extension.",
+                formula: [
+                    'Y = FL / AΔL',
+                    'K = -VΔP/ΔV',
+                    'η = FL / AΔx',
+                    'σ = -lateral strain / longitudinal strain',
+                ],
+            },
+            {
+                tag: 'energy',
+                name: 'Elastic Potential Energy',
+                detail: 'Energy stored in stretched wire, spring',
+                concept: 'When you stretch a wire, work is done against intermolecular forces. This work is stored as elastic potential energy. It equals the area under the force-extension graph (a triangle for Hookean materials). Energy per unit volume = ½ × stress × strain.',
+                formula: [
+                    'U = ½Fx = ½kx²',
+                    'U = F²/2k',
+                    'u = ½ × σ × ε  (J/m³)',
+                    'U = ½YA(ΔL)²/L',
+                ],
+            },
+        ],
     },
 ]
 
