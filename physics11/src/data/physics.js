@@ -59,7 +59,7 @@ export const CHAPTERS = [
     {
         id: 6, unit: 'Unit III',
         title: 'Mechanical Properties of Solids',
-        desc: 'How materials deform — elasticity, stress, strain and Hooke\'s law.',
+        desc: "How materials deform — elasticity, stress, strain and Hooke's law.",
         topics: [
             { tag: 'elastic', name: 'Elasticity & Plasticity', detail: 'Elastic limit, permanent set' },
             { tag: 'stress', name: 'Stress and Strain', detail: 'Tensile, compressive, shear types' },
@@ -106,7 +106,7 @@ export const CHAPTERS = [
     {
         id: 10, unit: 'Unit IV',
         title: 'Electrostatics',
-        desc: 'Electric charges at rest — Coulomb\'s law to capacitors.',
+        desc: "Electric charges at rest — Coulomb's law to capacitors.",
         topics: [
             { tag: 'charge', name: "Electric Charge & Coulomb's Law", detail: 'Properties, permittivity, superposition' },
             { tag: 'field', name: 'Electric Field & Potential', detail: 'Field lines, potential, equipotential' },
@@ -132,9 +132,7 @@ export const CHAPTERS = [
         topics: [
             { tag: 'magnets', name: "Bar Magnets & Earth's Magnetism", detail: 'Dipole, field lines, declination, dip' },
             { tag: 'field', name: 'Magnetic Field & Forces', detail: 'Lorentz force, Hall effect, cyclotron' },
-            {
-                tag: 'current', name: 'Magnetic Effect of Current', detail: 'Biot-Savart, Ampere\'s law, solenoid'
-            },
+            { tag: 'current', name: "Magnetic Effect of Current", detail: "Biot-Savart, Ampere's law, solenoid" },
             { tag: 'matter', name: 'Magnetic Properties of Matter', detail: 'Dia, para, ferro; hysteresis loop' },
         ],
     },
