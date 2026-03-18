@@ -50,6 +50,11 @@ import OhmsLaw from './ch11_current/OhmsLaw'
 import KirchhoffLaws from './ch11_current/KirchhoffLaws'
 import JouleHeating from './ch11_current/JouleHeating'
 
+import BarMagnet from './ch12_magnetism/BarMagnet'
+import LorentzForce from './ch12_magnetism/LorentzForce'
+import BiotSavart from './ch12_magnetism/BiotSavart'
+import MagneticMatter from './ch12_magnetism/MagneticMatter'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -103,4 +108,10 @@ export const SIMULATORS = {
     ch11_t1: OhmsLaw,
     ch11_t2: KirchhoffLaws,
     ch11_t3: JouleHeating,
+
+
+    ch12_t0: BarMagnet,
+    ch12_t1: LorentzForce,
+    ch12_t2: BiotSavart,
+    ch12_t3: MagneticMatter,
 }

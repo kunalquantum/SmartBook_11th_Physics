@@ -538,7 +538,42 @@ export const CHAPTERS = [
                 formula: ['P = VI = I²R = V²/R', 'H = I²Rt', 'E = Pt (J)', '1 kWh = 3.6×10⁶ J'],
             },
         ],
+    }, {
+        id: 12, unit: 'Unit V',
+        title: 'Magnetism',
+        desc: 'Magnetic fields, forces, and the link between electricity and magnetism.',
+        topics: [
+            {
+                tag: 'magnets',
+                name: "Bar Magnets & Earth's Magnetism",
+                detail: 'Magnetic dipole, field lines, declination, dip',
+                concept: "A bar magnet is a magnetic dipole — field lines emerge from the north pole and enter the south pole, forming closed loops inside the magnet. Earth behaves like a giant bar magnet with its geographic south near the magnetic north. Magnetic declination is the angle between geographic and magnetic north. Angle of dip (inclination) is the angle the Earth's field makes with the horizontal.",
+                formula: ['B = μ₀M/4πr³', 'B_axial = μ₀2M/4πr³', 'B_equatorial = μ₀M/4πr³', 'M = m × 2l'],
+            },
+            {
+                tag: 'field',
+                name: 'Magnetic Field & Forces',
+                detail: 'Lorentz force, Hall effect, cyclotron',
+                concept: 'A moving charge in a magnetic field experiences a force perpendicular to both velocity and field: F = qv×B. This force does no work (always perpendicular to motion) but curves the path into a circle. The radius of circular motion r = mv/qB. This is the basis of the cyclotron, mass spectrometer, and Hall effect sensors.',
+                formula: ['F = q(v×B) = qvB sinθ', 'r = mv/qB', 'ω = qB/m', 'F = BIl sinθ'],
+            },
+            {
+                tag: 'current',
+                name: 'Magnetic Effect of Current',
+                detail: 'Biot-Savart law, Ampere\'s law, solenoid, toroid',
+                concept: "Every current-carrying conductor creates a magnetic field. Biot-Savart law gives the field contribution from each tiny current element. Ampere's law is the magnetic analogue of Gauss's law — the line integral of B around a closed loop equals μ₀ times the enclosed current. A solenoid creates a nearly uniform field inside.",
+                formula: ['dB = μ₀Idl×r̂/4πr²', 'B_wire = μ₀I/2πr', 'B_solenoid = μ₀nI', '∮B·dl = μ₀I_enc'],
+            },
+            {
+                tag: 'matter',
+                name: 'Magnetic Properties of Matter',
+                detail: 'Dia, para, ferro materials, hysteresis loop',
+                concept: 'Diamagnetic materials (χ < 0) weakly repel magnetic fields — all materials have this. Paramagnetic (χ > 0) weakly attract. Ferromagnetic materials (iron, nickel) have large χ and retain magnetization. The hysteresis loop shows how ferromagnets retain memory of past magnetization — the area of the loop = energy lost per cycle.',
+                formula: ['B = μ₀(H + M)', 'M = χH', 'μᵣ = 1 + χ', 'B_r = remanence'],
+            },
+        ],
     },
+
 
 ]
 
