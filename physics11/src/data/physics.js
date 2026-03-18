@@ -504,6 +504,40 @@ export const CHAPTERS = [
                 formula: ['C = Q/V = ε₀A/d', 'C_dielectric = κC₀', 'U = ½CV²', 'E = σ/ε₀ = V/d'],
             },
         ],
+    }, {
+        id: 11, unit: 'Unit IV',
+        title: 'Electric Current Through Conductors',
+        desc: "Moving charges — Ohm's law, resistance, and Kirchhoff's laws.",
+        topics: [
+            {
+                tag: 'current',
+                name: 'Electric Current & Drift Velocity',
+                detail: 'Current density, mobility, conductivity',
+                concept: 'Electric current is the net flow of charge per second. In a conductor, free electrons move randomly at high thermal speeds (~10⁶ m/s) but drift very slowly (~10⁻⁴ m/s) in the direction of the electric field. This slow drift is responsible for current. I = nAev_d where n = electron density, A = area, e = electron charge, v_d = drift speed.',
+                formula: ['I = nAev_d', 'J = nev_d = σE', 'μ = v_d/E', 'σ = neμ'],
+            },
+            {
+                tag: 'ohm',
+                name: "Ohm's Law & Resistance",
+                detail: 'Resistivity, temperature dependence, superconductivity',
+                concept: "Ohm's law: V = IR. Resistance depends on material (resistivity ρ), length L, and cross-section A: R = ρL/A. Resistivity increases with temperature for metals (positive temperature coefficient) but decreases for semiconductors. At very low temperatures some materials become superconductors with zero resistance.",
+                formula: ['V = IR', 'R = ρL/A', 'ρ(T) = ρ₀[1 + α(T−T₀)]', 'G = 1/R (siemens)'],
+            },
+            {
+                tag: 'circuit',
+                name: "Kirchhoff's Laws",
+                detail: 'Junction rule, loop rule, Wheatstone bridge',
+                concept: "Kirchhoff's Current Law (KCL): sum of currents entering a junction = sum leaving (charge conservation). Kirchhoff's Voltage Law (KVL): sum of all voltage drops around any closed loop = 0 (energy conservation). Together they let you solve any circuit no matter how complex. The Wheatstone bridge uses KCL/KVL to measure unknown resistance.",
+                formula: ['ΣI_in = ΣI_out (KCL)', 'ΣV = 0 (KVL)', 'P/Q = R/S (bridge)', 'R_x = RS/P'],
+            },
+            {
+                tag: 'power',
+                name: 'Electrical Power & Energy',
+                detail: 'Joule heating, power dissipation, household circuits',
+                concept: 'When current flows through resistance, electrical energy converts to heat — Joule heating. Power P = VI = I²R = V²/R. Energy = Pt (joules) = Pt/3.6×10⁶ (kWh). A 1 kW device running for 1 hour consumes 1 unit of electricity. Higher resistance means more heat for the same current — the basis of heaters and filament bulbs.',
+                formula: ['P = VI = I²R = V²/R', 'H = I²Rt', 'E = Pt (J)', '1 kWh = 3.6×10⁶ J'],
+            },
+        ],
     },
 
 ]

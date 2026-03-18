@@ -45,6 +45,11 @@ import EFieldPotential from './ch10_electro/EFieldPotential'
 import GaussLaw from './ch10_electro/GaussLaw'
 import Capacitor from './ch10_electro/Capacitor'
 
+import DriftVelocity from './ch11_current/DriftVelocity'
+import OhmsLaw from './ch11_current/OhmsLaw'
+import KirchhoffLaws from './ch11_current/KirchhoffLaws'
+import JouleHeating from './ch11_current/JouleHeating'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -93,4 +98,9 @@ export const SIMULATORS = {
     ch10_t1: EFieldPotential,
     ch10_t2: GaussLaw,
     ch10_t3: Capacitor,
+
+    ch11_t0: DriftVelocity,
+    ch11_t1: OhmsLaw,
+    ch11_t2: KirchhoffLaws,
+    ch11_t3: JouleHeating,
 }
