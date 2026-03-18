@@ -34,6 +34,12 @@ import Superposition from './ch08_sound/Superposition'
 import StringsPipes from './ch08_sound/StringsPipes'
 import DopplerEffect from './ch08_sound/DopplerEffect'
 
+import ReflectionMirror from './ch09_optics/ReflectionMirror'
+import RefractionSnell from './ch09_optics/RefractionSnell'
+import LensSim from './ch09_optics/LensSim'
+import OpticalInstruments from './ch09_optics/OpticalInstruments'
+import WaveOptics from './ch09_optics/WaveOptics'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -71,4 +77,10 @@ export const SIMULATORS = {
     ch08_t2: Superposition,
     ch08_t3: StringsPipes,
     ch08_t4: DopplerEffect,
+
+    ch09_t0: ReflectionMirror,
+    ch09_t1: RefractionSnell,
+    ch09_t2: LensSim,
+    ch09_t3: OpticalInstruments,
+    ch09_t4: WaveOptics,
 }
