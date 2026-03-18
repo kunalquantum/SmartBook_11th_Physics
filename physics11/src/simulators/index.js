@@ -40,6 +40,11 @@ import LensSim from './ch09_optics/LensSim'
 import OpticalInstruments from './ch09_optics/OpticalInstruments'
 import WaveOptics from './ch09_optics/WaveOptics'
 
+import CoulombLaw from './ch10_electro/CoulombLaw'
+import EFieldPotential from './ch10_electro/EFieldPotential'
+import GaussLaw from './ch10_electro/GaussLaw'
+import Capacitor from './ch10_electro/Capacitor'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -83,4 +88,9 @@ export const SIMULATORS = {
     ch09_t2: LensSim,
     ch09_t3: OpticalInstruments,
     ch09_t4: WaveOptics,
+
+    ch10_t0: CoulombLaw,
+    ch10_t1: EFieldPotential,
+    ch10_t2: GaussLaw,
+    ch10_t3: Capacitor,
 }

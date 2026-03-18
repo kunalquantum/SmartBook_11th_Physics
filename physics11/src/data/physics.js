@@ -470,6 +470,40 @@ export const CHAPTERS = [
                 formula: ['β = λD/d', 'Path diff = d sinθ', 'Bright: nλ', 'Dark: (n+½)λ'],
             },
         ],
+    }, {
+        id: 10, unit: 'Unit IV',
+        title: 'Electrostatics',
+        desc: 'Electric charges at rest — Coulomb\'s law to capacitors.',
+        topics: [
+            {
+                tag: 'charge',
+                name: "Electric Charge & Coulomb's Law",
+                detail: 'Properties of charge, permittivity, superposition',
+                concept: 'Charge comes in two types — positive and negative. Like charges repel, unlike attract. Coulomb\'s law gives the force between two point charges: it follows an inverse-square law just like gravity but is vastly stronger. The superposition principle lets you find the total force from many charges by vector addition.',
+                formula: ['F = kq₁q₂/r²', 'k = 1/4πε₀ = 9×10⁹ Nm²C⁻²', 'ε₀ = 8.85×10⁻¹² C²N⁻¹m⁻²', 'F_net = ΣFᵢ'],
+            },
+            {
+                tag: 'field',
+                name: 'Electric Field & Potential',
+                detail: 'Field lines, electric potential, equipotential surfaces',
+                concept: 'Electric field is the force per unit positive test charge. Field lines show direction — they start on positive charges and end on negative. Electric potential is the work done per unit charge to bring a test charge from infinity. Equipotential surfaces are perpendicular to field lines everywhere.',
+                formula: ['E = F/q = kQ/r²', 'V = kQ/r', 'E = −dV/dr', 'W = q(V₁−V₂)'],
+            },
+            {
+                tag: 'gauss',
+                name: "Gauss's Law",
+                detail: 'Electric flux, symmetric charge distributions',
+                concept: "Gauss's law states that the total electric flux through any closed surface equals the enclosed charge divided by ε₀. It's equivalent to Coulomb's law but far more powerful for symmetric charge distributions — a single line of algebra replaces pages of integration.",
+                formula: ['Φ = ∮E·dA = Q_enc/ε₀', 'E(sphere) = kQ/r²', 'E(plane) = σ/2ε₀', 'E(wire) = λ/2πε₀r'],
+            },
+            {
+                tag: 'capacitor',
+                name: 'Capacitance & Capacitors',
+                detail: 'Parallel plate capacitor, dielectrics, energy stored',
+                concept: 'A capacitor stores charge by maintaining a potential difference between two conductors. Capacitance C = Q/V. For a parallel plate capacitor, C = ε₀A/d. A dielectric material between the plates increases C by the dielectric constant κ. Energy stored = ½CV² = ½QV = Q²/2C.',
+                formula: ['C = Q/V = ε₀A/d', 'C_dielectric = κC₀', 'U = ½CV²', 'E = σ/ε₀ = V/d'],
+            },
+        ],
     },
 
 ]
