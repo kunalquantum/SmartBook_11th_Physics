@@ -28,6 +28,12 @@ import Calorimetry from './ch07_therma/Calorimetry'
 import HeatTransfer from './ch07_therma/HeatTransfer'
 import IdealGasLaws from './ch07_therma/IdealGasLaws'
 
+import WaveMotion from './ch08_sound/WaveMotion'
+import SpeedOfSound from './ch08_sound/SpeedOfSound'
+import Superposition from './ch08_sound/Superposition'
+import StringsPipes from './ch08_sound/StringsPipes'
+import DopplerEffect from './ch08_sound/DopplerEffect'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -59,4 +65,10 @@ export const SIMULATORS = {
     ch07_t2: Calorimetry,
     ch07_t3: HeatTransfer,
     ch07_t4: IdealGasLaws,
+
+    ch08_t0: WaveMotion,
+    ch08_t1: SpeedOfSound,
+    ch08_t2: Superposition,
+    ch08_t3: StringsPipes,
+    ch08_t4: DopplerEffect,
 }
