@@ -12,6 +12,12 @@ import ProjectileSim from './ch03_motion/ProjectileSim'
 import CircularMotion from './ch03_motion/CircularMotion'
 import RelativeVelocity from './ch03_motion/RelativeVelocity'
 
+import NewtonFirst from './ch04_laws/NewtonFirst'
+import NewtonSecond from './ch04_laws/NewtonSecond'
+import NewtonThird from './ch04_laws/NewtonThird'
+import FrictionSim from './ch04_laws/FrictionSim'
+import CircularDyn from './ch04_laws/CircularDyn'
+
 import GravitationalForce from './ch05_gravitation/GravitationalForce'
 import GravityVariation from './ch05_gravitation/GravityVariation'
 import OrbitalMotion from './ch05_gravitation/OrbitalMotion'
@@ -89,6 +95,12 @@ export const SIMULATORS = {
     ch03_t0: ProjectileSim,
     ch03_t1: CircularMotion,
     ch03_t2: RelativeVelocity,
+
+    ch04_t0: NewtonFirst,
+    ch04_t1: NewtonSecond,
+    ch04_t2: NewtonThird,
+    ch04_t3: FrictionSim,
+    ch04_t4: CircularDyn,
 
     ch05_t0: GravitationalForce,
     ch05_t1: GravityVariation,
