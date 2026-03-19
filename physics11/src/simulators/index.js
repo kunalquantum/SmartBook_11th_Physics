@@ -55,6 +55,10 @@ import LorentzForce from './ch12_magnetism/LorentzForce'
 import BiotSavart from './ch12_magnetism/BiotSavart'
 import MagneticMatter from './ch12_magnetism/MagneticMatter'
 
+import FaradayInduction from './ch13_emi/FaradayInduction'
+import InductanceSim from './ch13_emi/InductanceSim'
+import ACGenerator from './ch13_emi/ACGenerator'
+import TransformerSim from './ch13_emi/TransformerSim'
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -114,4 +118,9 @@ export const SIMULATORS = {
     ch12_t1: LorentzForce,
     ch12_t2: BiotSavart,
     ch12_t3: MagneticMatter,
+
+    ch13_t0: FaradayInduction,
+    ch13_t1: InductanceSim,
+    ch13_t2: ACGenerator,
+    ch13_t3: TransformerSim,
 }

@@ -573,6 +573,41 @@ export const CHAPTERS = [
             },
         ],
     },
+    {
+        id: 13, unit: 'Unit V',
+        title: 'Electromagnetic Induction',
+        desc: 'How changing magnetic fields generate electric currents.',
+        topics: [
+            {
+                tag: 'faraday',
+                name: "Faraday's Laws of Induction",
+                detail: "EMF, Lenz's law, motional EMF",
+                concept: "Faraday's first law: whenever magnetic flux through a circuit changes, an EMF is induced. Faraday's second law: the magnitude of EMF equals the rate of change of flux. Lenz's law gives the direction — the induced current always opposes the change that caused it (conservation of energy). Motional EMF occurs when a conductor moves through a magnetic field: ε = Blv.",
+                formula: ['ε = −dΦ/dt', 'Φ = B·A = BA cosθ', 'ε = −N dΦ/dt', 'ε_motional = Blv'],
+            },
+            {
+                tag: 'self',
+                name: 'Self & Mutual Inductance',
+                detail: 'L, M coefficients, energy stored in inductor',
+                concept: 'Self-inductance L is a coil\'s tendency to oppose changes in its own current — the induced back-EMF = −L dI/dt. Mutual inductance M describes how much EMF is induced in one coil by changing current in another. Energy stored in an inductor = ½LI². A solenoid of N turns, length l, area A has L = μ₀N²A/l.',
+                formula: ['ε = −L dI/dt', 'ε₂ = −M dI₁/dt', 'L = μ₀N²A/l', 'U = ½LI²'],
+            },
+            {
+                tag: 'ac',
+                name: 'Alternating Current Basics',
+                detail: 'AC generation, RMS values, phasors',
+                concept: 'A coil rotating in a uniform magnetic field generates a sinusoidal EMF: ε = ε₀ sinωt. The RMS (root mean square) value is what matters for power calculations — it equals the peak value divided by √2. RMS voltage drives the same power as an equivalent DC voltage. Phasors represent sinusoidal quantities as rotating vectors.',
+                formula: ['ε = NBAω sinωt', 'V_rms = V₀/√2', 'I_rms = I₀/√2', 'P = V_rms × I_rms'],
+            },
+            {
+                tag: 'transformer',
+                name: 'Transformers',
+                detail: 'Step-up/down, efficiency, energy losses',
+                concept: 'A transformer uses mutual induction between two coils on a shared iron core. The turns ratio determines voltage transformation: V₂/V₁ = N₂/N₁. For an ideal transformer, power is conserved: V₁I₁ = V₂I₂. Real transformers lose energy through copper losses (I²R in windings), iron losses (eddy currents, hysteresis), and flux leakage.',
+                formula: ['V₂/V₁ = N₂/N₁', 'I₁/I₂ = N₂/N₁', 'η = P_out/P_in × 100%', 'P₁ = P₂ (ideal)'],
+            },
+        ],
+    },
 
 
 ]
