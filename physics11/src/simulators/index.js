@@ -59,6 +59,12 @@ import FaradayInduction from './ch13_emi/FaradayInduction'
 import InductanceSim from './ch13_emi/InductanceSim'
 import ACGenerator from './ch13_emi/ACGenerator'
 import TransformerSim from './ch13_emi/TransformerSim'
+
+import EnergyBands from './ch14_semi/EnergyBands'
+import DopingSim from './ch14_semi/DopingSim'
+import PNJunction from './ch14_semi/PNJunction'
+import SemiDevices from './ch14_semi/SemiDevices'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -123,4 +129,10 @@ export const SIMULATORS = {
     ch13_t1: InductanceSim,
     ch13_t2: ACGenerator,
     ch13_t3: TransformerSim,
+
+    ch14_t0: EnergyBands,
+    ch14_t1: DopingSim,
+    ch14_t2: PNJunction,
+    ch14_t3: SemiDevices,
+
 }

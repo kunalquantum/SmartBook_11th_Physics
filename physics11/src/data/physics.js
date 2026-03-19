@@ -607,6 +607,40 @@ export const CHAPTERS = [
                 formula: ['V₂/V₁ = N₂/N₁', 'I₁/I₂ = N₂/N₁', 'η = P_out/P_in × 100%', 'P₁ = P₂ (ideal)'],
             },
         ],
+    }, {
+        id: 14, unit: 'Unit V',
+        title: 'Semiconductors',
+        desc: 'The quantum world of p-n junctions, transistors, and optoelectronics.',
+        topics: [
+            {
+                tag: 'band',
+                name: 'Energy Bands & Classification',
+                detail: 'Conductors, insulators, semiconductors, band gap',
+                concept: 'In solids, atomic energy levels broaden into bands. The valence band is the highest filled band; the conduction band is the lowest empty one. The gap between them is the band gap E_g. Conductors: bands overlap (E_g = 0). Semiconductors: small gap (~1 eV) — thermal energy can bridge it. Insulators: large gap (>5 eV) — electrons cannot cross at room temperature.',
+                formula: ['E_g(Si) = 1.1 eV', 'E_g(Ge) = 0.7 eV', 'E_g(GaAs) = 1.4 eV', 'n_i = A T^(3/2) e^(-Eg/2kT)'],
+            },
+            {
+                tag: 'sc',
+                name: 'Intrinsic & Extrinsic Semiconductors',
+                detail: 'n-type, p-type, doping, carrier concentration',
+                concept: 'Pure (intrinsic) silicon has equal electrons and holes. Adding pentavalent impurities (P, As) donates extra electrons → n-type. Adding trivalent impurities (B, Al) creates holes → p-type. Doping increases conductivity by many orders of magnitude. The Fermi level shifts toward the conduction band for n-type and toward the valence band for p-type.',
+                formula: ['n·p = nᵢ²', 'n ≈ N_D (n-type)', 'p ≈ N_A (p-type)', 'σ = e(nμₑ + pμₕ)'],
+            },
+            {
+                tag: 'diode',
+                name: 'p-n Junction & Diode',
+                detail: 'Depletion layer, forward/reverse bias, I-V curve',
+                concept: 'At a p-n junction, electrons diffuse from n to p and holes from p to n, creating a depletion region with a built-in electric field (~0.6V for Si) that opposes further diffusion. Forward bias shrinks the depletion layer and allows large current. Reverse bias widens it — only a tiny leakage current flows until breakdown voltage is reached.',
+                formula: ['I = I₀(e^(V/V_T)−1)', 'V_T = kT/e = 26 mV', 'V_bi ≈ 0.6 V (Si)', 'I₀ ≈ 10⁻¹² A'],
+            },
+            {
+                tag: 'devices',
+                name: 'Semiconductor Devices',
+                detail: 'LED, photodiode, solar cell, Zener diode',
+                concept: 'LED: forward-biased junction emits photons when electrons recombine with holes — photon energy = band gap. Photodiode: reverse-biased — incident photons generate electron-hole pairs creating a photocurrent. Solar cell: same principle but optimised for maximum power output. Zener diode: heavily doped, operates in reverse breakdown — acts as a precision voltage reference.',
+                formula: ['E_photon = hf = E_g', 'I_photo = G × P_light', 'V_oc = (kT/e)ln(I_sc/I₀ + 1)', 'P_max = V_mp × I_mp'],
+            },
+        ],
     },
 
 
