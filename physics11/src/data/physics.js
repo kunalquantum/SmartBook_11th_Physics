@@ -675,6 +675,40 @@ export const CHAPTERS = [
                 formula: ['f_s ≥ 2f_max  (Nyquist)', 'f_alias = |f_s − f|', 'Bit rate = f_s × bits/sample', 'Fibre loss: ~0.2 dB/km'],
             },
         ],
+    }, {
+        id: 16, unit: 'Unit VI',
+        title: 'Modern Physics',
+        desc: 'Atoms, nuclei, and the quantum world — where classical physics ends.',
+        topics: [
+            {
+                tag: 'atomic',
+                name: 'Atomic Structure',
+                detail: 'Rutherford, Bohr model, spectral series',
+                concept: 'Bohr proposed that electrons orbit the nucleus only in specific allowed orbits where angular momentum is quantized (L = nħ). Energy of each level: Eₙ = −13.6/n² eV. When an electron drops from level nᵢ to nf, it emits a photon with energy = Eᵢ − Ef. The Lyman series (to n=1) is UV, Balmer (to n=2) is visible, Paschen (to n=3) is IR.',
+                formula: ['Eₙ = −13.6/n² eV', 'rₙ = n²a₀  (a₀=0.529Å)', '1/λ = R(1/nf² − 1/ni²)', 'R = 1.097×10⁷ m⁻¹'],
+            },
+            {
+                tag: 'quantum',
+                name: 'Quantum Numbers & Orbitals',
+                detail: 'n, l, m, s quantum numbers, Pauli exclusion',
+                concept: 'Four quantum numbers completely describe an electron: n (principal — energy/size), l (azimuthal — shape: 0=s,1=p,2=d,3=f), mₗ (magnetic — orientation), mₛ (spin: +½ or −½). Pauli exclusion: no two electrons in an atom can have identical sets of all four quantum numbers. Maximum electrons per shell = 2n².',
+                formula: ['n = 1,2,3...', 'l = 0 to n−1', 'mₗ = −l to +l', 'mₛ = ±½'],
+            },
+            {
+                tag: 'nuclear',
+                name: 'Nuclear Physics',
+                detail: 'Binding energy, radioactivity, decay laws',
+                concept: 'The nucleus is held together by the strong nuclear force against electrostatic repulsion. Binding energy per nucleon peaks at Fe-56 (most stable). Radioactive decay is a random quantum process: N = N₀e^(−λt). The half-life T½ = ln2/λ. Alpha decay emits He-4 nuclei, beta decay emits electrons/positrons, gamma decay emits high-energy photons.',
+                formula: ['N = N₀e^(−λt)', 'T½ = ln2/λ = 0.693/λ', 'Activity A = λN', 'BE = (Δm)c²'],
+            },
+            {
+                tag: 'modern',
+                name: 'Dual Nature of Radiation',
+                detail: 'Photoelectric effect, de Broglie, Heisenberg uncertainty',
+                concept: 'Einstein explained the photoelectric effect: light consists of photons each carrying energy E = hf. If hf > φ (work function), an electron is ejected with KE = hf − φ. de Broglie: every moving particle has a wavelength λ = h/mv. Heisenberg uncertainty: you cannot simultaneously know both position and momentum precisely — ΔxΔp ≥ ħ/2.',
+                formula: ['KE_max = hf − φ', 'V_stop = (hf − φ)/e', 'λ = h/mv  (de Broglie)', 'ΔxΔp ≥ ħ/2'],
+            },
+        ],
     },
 
 

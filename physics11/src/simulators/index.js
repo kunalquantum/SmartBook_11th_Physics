@@ -70,6 +70,11 @@ import Modulation from './ch15_comm/Modulation'
 import WavePropagation from './ch15_comm/WavePropagation'
 import DigitalComm from './ch15_comm/DigitalComm'
 
+import BohrAtom from './ch16_modern/BohrAtom'
+import QuantumNumbers from './ch16_modern/QuantumNumbers'
+import NuclearDecay from './ch16_modern/NuclearDecay'
+import PhotoelectricEffect from './ch16_modern/PhotoelectricEffect'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -144,5 +149,11 @@ export const SIMULATORS = {
     ch15_t1: Modulation,
     ch15_t2: WavePropagation,
     ch15_t3: DigitalComm,
+
+
+    ch16_t0: BohrAtom,
+    ch16_t1: QuantumNumbers,
+    ch16_t2: NuclearDecay,
+    ch16_t3: PhotoelectricEffect,
 
 }
