@@ -641,6 +641,40 @@ export const CHAPTERS = [
                 formula: ['E_photon = hf = E_g', 'I_photo = G × P_light', 'V_oc = (kT/e)ln(I_sc/I₀ + 1)', 'P_max = V_mp × I_mp'],
             },
         ],
+    }, {
+        id: 15, unit: 'Unit VI',
+        title: 'Communication Systems',
+        desc: 'Modulation, transmission, and modern communication technology.',
+        topics: [
+            {
+                tag: 'basics',
+                name: 'Elements of Communication',
+                detail: 'Transmitter, channel, receiver, signal vs noise',
+                concept: 'Every communication system has three core elements: a transmitter (converts information to signal), a channel (the medium — air, cable, fibre), and a receiver (converts signal back to information). Real channels always add noise. Signal-to-Noise Ratio (SNR) measures how much stronger the signal is than the noise. Bandwidth is the range of frequencies a channel can carry.',
+                formula: ['SNR = P_signal / P_noise', 'SNR_dB = 10 log₁₀(SNR)', 'BW = f_max − f_min', 'C = B log₂(1 + SNR)'],
+            },
+            {
+                tag: 'modulation',
+                name: 'Modulation & Demodulation',
+                detail: 'AM, FM, bandwidth, carrier wave',
+                concept: 'Modulation impresses a low-frequency message signal onto a high-frequency carrier wave for efficient transmission. AM (amplitude modulation): carrier amplitude varies with message. FM (frequency modulation): carrier frequency varies — more noise resistant. The modulation index determines the extent of variation. Demodulation recovers the original signal at the receiver.',
+                formula: ['AM: y = A_c(1 + m cosωmt) cosωct', 'FM: y = A_c cos(ωct + mf sinωmt)', 'm_a = A_m/A_c', 'BW_FM = 2(Δf + f_m)'],
+            },
+            {
+                tag: 'propagation',
+                name: 'Wave Propagation',
+                detail: 'Ground, sky, space waves; satellite communication',
+                concept: 'Ground waves travel along Earth\'s surface — used for AM radio (up to ~2 MHz). Sky waves reflect off the ionosphere — used for shortwave (2–30 MHz). Space waves travel line-of-sight — used for VHF/UHF/microwave/satellite. The ionosphere (60–400 km altitude) reflects waves below the critical frequency and lets higher frequencies pass through to space.',
+                formula: ['d_horizon = √(2Rh)', 'f_critical = 9√(N_max)', 'Skip distance: ground + sky', 'GEO altitude: 35,786 km'],
+            },
+            {
+                tag: 'digital',
+                name: 'Digital Communication',
+                detail: 'Sampling theorem, aliasing, optical fibre',
+                concept: "Shannon's sampling theorem: to faithfully reconstruct a signal, it must be sampled at least twice the highest frequency (Nyquist rate). Sampling below this causes aliasing — a false lower frequency appears. Digital signals are immune to noise accumulation (regenerative repeaters). Optical fibres carry data as light pulses with extremely low loss.",
+                formula: ['f_s ≥ 2f_max  (Nyquist)', 'f_alias = |f_s − f|', 'Bit rate = f_s × bits/sample', 'Fibre loss: ~0.2 dB/km'],
+            },
+        ],
     },
 
 

@@ -65,6 +65,11 @@ import DopingSim from './ch14_semi/DopingSim'
 import PNJunction from './ch14_semi/PNJunction'
 import SemiDevices from './ch14_semi/SemiDevices'
 
+import CommElements from './ch15_comm/CommElements'
+import Modulation from './ch15_comm/Modulation'
+import WavePropagation from './ch15_comm/WavePropagation'
+import DigitalComm from './ch15_comm/DigitalComm'
+
 export const SIMULATORS = {
     ch01_t0: UnitConverter,
     ch01_t1: ErrorSimulator,
@@ -134,5 +139,10 @@ export const SIMULATORS = {
     ch14_t1: DopingSim,
     ch14_t2: PNJunction,
     ch14_t3: SemiDevices,
+
+    ch15_t0: CommElements,
+    ch15_t1: Modulation,
+    ch15_t2: WavePropagation,
+    ch15_t3: DigitalComm,
 
 }
